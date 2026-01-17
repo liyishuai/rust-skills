@@ -1,0 +1,90 @@
+{
+  "name": "rust-skills",
+  "version": "1.0.0",
+  "description": "Comprehensive Rust learning and development skills for Claude",
+  "author": "rust-skills contributors",
+  "license": "MIT",
+  "repository": "",
+
+  "stats": {
+    "meta_skills": 15,
+    "domain_skills": 7,
+    "core_skills": 5,
+    "unsafe_rules": 47,
+    "coding_guidelines": {
+      "p_rules": 80,
+      "g_rules_compressed": true
+    },
+    "agents": 5,
+    "commands": 15,
+    "templates": 5
+  },
+
+  "skills": {
+    "core": [
+      "rust-router",
+      "rust-learner",
+      "dynamic-skills"
+    ],
+    "meta_questions": [
+      "m01-ownership",
+      "m02-resource",
+      "m03-mutability",
+      "m04-zero-cost",
+      "m05-type-driven",
+      "m06-error-handling",
+      "m07-concurrency",
+      "m08-safety",
+      "m09-domain",
+      "m10-performance",
+      "m11-ecosystem",
+      "m12-lifecycle",
+      "m13-domain-error",
+      "m14-mental-model",
+      "m15-anti-pattern"
+    ],
+    "specialized": [
+      "unsafe-checker",
+      "coding-guidelines"
+    ]
+  },
+
+  "agents": [
+    "crate-researcher",
+    "rust-changelog",
+    "docs-researcher",
+    "clippy-researcher",
+    "browser-fetcher"
+  ],
+
+  "commands": [
+    "guideline",
+    "unsafe-check",
+    "unsafe-review",
+    "rust-review",
+    "audit",
+    "crate-info",
+    "rust-features",
+    "docs",
+    "skill-index",
+    "clean-crate-skills",
+    "sync-crate-skills",
+    "update-crate-skill",
+    "create-skills-via-llms",
+    "create-llms-for-skills",
+    "fix-skill-docs"
+  ],
+
+  "compatibility": {
+    "claude_code_min_version": "2.1.0",
+    "rust_version_coverage": "1.0.0 - 1.85.0"
+  },
+
+  "last_updated": "2026-01-16",
+  "quality_checks": {
+    "skill_frontmatter": true,
+    "agent_tools_declared": true,
+    "deep_content_present": true,
+    "tests_available": true
+  }
+}
