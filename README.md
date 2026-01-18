@@ -45,7 +45,21 @@ AI (with Rust Skills):
 
 ## Installation
 
-### Method 1: Full Plugin (Recommended)
+### Method 1: Via Marketplace (Recommended)
+
+Install directly from the Claude Code marketplace:
+
+```bash
+# Add the marketplace
+/plugin marketplace add ZhangHanDong/rust-skills
+
+# Install the plugin
+/plugin install rust-skills@rust-skills
+```
+
+This method provides **automatic updates** and the easiest installation experience.
+
+### Method 2: Full Plugin (Manual)
 
 This method enables **all features including hooks** for automatic meta-cognition triggering.
 
@@ -57,7 +71,7 @@ git clone https://github.com/ZhangHanDong/rust-skills.git
 claude --plugin-dir /path/to/rust-skills
 ```
 
-### Method 2: Skills Only
+### Method 3: Skills Only
 
 This method only installs skills without hooks. You need to manually invoke skills.
 
@@ -71,12 +85,14 @@ cp -r rust-skills/skills/* ~/.claude/skills/
 
 ### Feature Comparison
 
-| Feature | Full Plugin | Skills Only |
-|---------|-------------|-------------|
-| All Skills | ✅ | ✅ |
-| Auto meta-cognition trigger | ✅ | ❌ |
-| Hook-based routing | ✅ | ❌ |
-| Background agents | ✅ | ✅ |
+| Feature | Marketplace | Manual Plugin | Skills Only |
+|---------|-------------|---------------|-------------|
+| All Skills | ✅ | ✅ | ✅ |
+| Auto meta-cognition trigger | ✅ | ✅ | ❌ |
+| Hook-based routing | ✅ | ✅ | ❌ |
+| Background agents | ✅ | ✅ | ✅ |
+| Automatic updates | ✅ | ❌ | ❌ |
+| Easy installation | ✅ | ⚠️ | ⚠️ |
 
 ### Permission Configuration
 

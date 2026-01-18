@@ -45,7 +45,21 @@ AI (使用 Rust Skills):
 
 ## 安装
 
-### 方式一：完整插件安装（推荐）
+### 方式一：通过市场安装（推荐）
+
+从 Claude Code 市场直接安装：
+
+```bash
+# 添加市场
+/plugin marketplace add ZhangHanDong/rust-skills
+
+# 安装插件
+/plugin install rust-skills@rust-skills
+```
+
+此方式提供**自动更新**和最简单的安装体验。
+
+### 方式二：完整插件安装（手动）
 
 此方式启用**所有功能，包括 hooks**，自动触发元认知流程。
 
@@ -57,7 +71,7 @@ git clone https://github.com/ZhangHanDong/rust-skills.git
 claude --plugin-dir /path/to/rust-skills
 ```
 
-### 方式二：仅安装 Skills
+### 方式三：仅安装 Skills
 
 此方式仅安装 skills，不包含 hooks。需要手动调用 skills。
 
@@ -71,12 +85,14 @@ cp -r rust-skills/skills/* ~/.claude/skills/
 
 ### 功能对比
 
-| 功能 | 完整插件 | 仅 Skills |
-|------|----------|-----------|
-| 所有 Skills | ✅ | ✅ |
-| 自动触发元认知 | ✅ | ❌ |
-| Hook 路由 | ✅ | ❌ |
-| 后台 Agents | ✅ | ✅ |
+| 功能 | 市场安装 | 手动插件 | 仅 Skills |
+|------|----------|----------|-----------|
+| 所有 Skills | ✅ | ✅ | ✅ |
+| 自动触发元认知 | ✅ | ✅ | ❌ |
+| Hook 路由 | ✅ | ✅ | ❌ |
+| 后台 Agents | ✅ | ✅ | ✅ |
+| 自动更新 | ✅ | ❌ | ❌ |
+| 简易安装 | ✅ | ⚠️ | ⚠️ |
 
 ### 权限配置
 
